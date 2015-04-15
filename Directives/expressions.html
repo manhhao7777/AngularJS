@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>AngularJS - Directives</title>
+	<meta charset="utf8">
+	<script src="angular.min.js"></script>
+	<style type="text/css">
+		body{
+			font-family: Arial;
+			font-size: 13px;
+		}
+	</style>
+</head>
+
+<body>
+	<div ng-app="" ng-init="person={ten:'Manh',ho:'Nguyen'}; points=[1,2,3,4,5,6]">
+		<input type="text" ng-model="value1" placeholder="Type text or number">
+		<input type="text" ng-model="value2" placeholder="Type text or number">
+	<h1>Numbers: {{value1* value2}}</h1>
+	
+
+	<h1>Strings: {{value1+' ' +value2}}</h1>
+	
+	<h1>Objects: <span ng-bind="person.ten + ' ' +person.ho"></span></h1>
+	
+	<h1>Arrays: <span ng-bind="points[2]"></span> OR {{points[4]}}</h1>
+	</div>
+</body>
+</html

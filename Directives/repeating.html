@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>AngularJS - Directives</title>
+	<meta charset="utf8">
+	<script src="angular.min.js"></script>
+	<style type="text/css">
+		body{
+			font-family: Arial;
+			font-size: 13px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Repeating HTML Elements</h1>
+	<div ng-app="" ng-init="names=[{ten:'Manh', ho:'Nguyen'},{ten:'Tuan',ho:'cho'},{ten:'Khanh',ho:'Cho'}]">
+		<ul>
+			<li ng-repeat="x in names">
+				{{x.ten+' '+x.ho}}
+			</li>
+		</ul>
+	</div>
+	<p></p>
+</body>
+</html

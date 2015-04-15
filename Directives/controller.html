@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>AngularJS - Directives</title>
+	<meta charset="utf8">
+	<script src="angular.min.js"></script>
+	<style type="text/css">
+		body{
+			font-family: Arial;
+			font-size: 13px;
+		}
+	</style>
+</head>
+
+<body>
+	<div ng-app="myApp" ng-controller="manhCtrl">
+		<table>
+			<tr>
+				<td>Account:</td>
+				<td><input type="text" id="txt_acc" ng-model="acc" ng-init="Manh"></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+			<td>
+				<input type="text" ng-model="pass">
+			</td>
+			</tr>
+		</table>
+		<span ng-if="acc" ng-init="Success!">
+  resulf...
+</span>
+
+	</div>
+	<script>
+		var app=angular.module('myApp',[]);
+		app.controller('manhCtrl', function($scope){
+			$scope.acc="";
+			$scope.pass="";
+		});
+    })
+	</script>
+</body>
+</html
